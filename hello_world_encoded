@@ -1,0 +1,71 @@
+:	cc_binary//main:hello-world*Vk8-fastbuildk8"@2ac98be9b134609a59dc484450ecded9e36dfa437937e75cb7b3456f26b203d5BexternalBlocal_config_ccB%builtin_include_directory_paths
+BmainBhello-world.cc
+"B
+	bazel-outB	k8-fastbuild
+Binternal	B
+_middlemenBE?_S_Smain_Chello-world-BazelCppSemantics_build_arch_k8-fastbuild
+"B	bin	B
+mainB_objsBhello-worldBhello-world.pic.o
+Bhello-world.pic.d
+ð@22e48eaf9e8e5b0ab4682e7b189249abd679a04c0e63491449c4d6f65b4d4f29"
+CppCompile(2/usr/bin/gcc2-U_FORTIFY_SOURCE2-fstack-protector2-Wall2-Wunused-but-set-parameter2-Wno-free-nonheap-object2-fno-omit-frame-pointer2
+-std=c++0x2-MD2-MF2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-world/hello-world.pic.d2Q-frandom-seed=bazel-out/k8-fastbuild/bin/main/_objs/hello-world/hello-world.pic.o2-fPIC2-DBAZEL_CURRENT_REPOSITORY=""2-iquote2.2-iquote2bazel-out/k8-fastbuild/bin2-iquote2external/bazel_tools2-iquote2/bazel-out/k8-fastbuild/bin/external/bazel_tools2
+-std=c++142-fno-canonical-system-headers2-Wno-builtin-macro-redefined2-D__DATE__="redacted"2-D__TIMESTAMP__="redacted"2-D__TIME__="redacted"2-c2main/hello-world.cc2-o2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-world/hello-world.pic.o:
+PWD/proc/self/cwdBJPhr@local_config_platform//:hostBhello-greetBhello-greet.pic.o
+B	libB_objsB
+hello-timeBhello-time.pic.o
+Bhello-time2Bhello-time.pic.o
+"Bbazel_toolsBtoolsB	cppBbuild_interface_so
+	Blink_dynamic_library.sh
+
+"	
+Bhello-world-2.params
+"
+Bhello-world
+Þ@76c7bfd335610df8397217bbf8de19eb6d5a6a46f3beb68e76e082ecef2a3505"CppLink(2/usr/bin/gcc2-o2+bazel-out/k8-fastbuild/bin/main/hello-world2-Wl,-S2-fuse-ld=gold2-Wl,-no-as-needed2-Wl,-z,relro,-z,now2
+-B/usr/bin2-pass-exit-codes2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-world/hello-world.pic.o2-Wl,--start-lib2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.o2-Wl,--end-lib2-Wl,--start-lib2@bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.o2-Wl,--end-lib2-Wl,--start-lib2Abazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.o2-Wl,--end-lib2-lstdc++2-lm25@bazel-out/k8-fastbuild/bin/main/hello-world-2.params:
+PWD/proc/self/cwdBJhr@local_config_platform//:host:
+cc_library//lib:hello-timeB!libB hello-time.cc!
+ "B,"&_S_Slib_Chello-time-cc_library-compile
+""B#hello-time.pic.d
+#‹@43de90291fcafeb60041cb6c5bc279a31f1241445833b8594e9c1fe2f7acb787"
+CppCompile(2/usr/bin/gcc2-U_FORTIFY_SOURCE2-fstack-protector2-Wall2-Wunused-but-set-parameter2-Wno-free-nonheap-object2-fno-omit-frame-pointer2
+-std=c++0x2-MD2-MF2@bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.d2N-frandom-seed=bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.o2-fPIC2-DBAZEL_CURRENT_REPOSITORY=""2-iquote2.2-iquote2bazel-out/k8-fastbuild/bin2	-nostdinc2-fno-canonical-system-headers2-Wno-builtin-macro-redefined2-D__DATE__="redacted"2-D__TIMESTAMP__="redacted"2-D__TIME__="redacted"2-c2lib/hello-time.cc2-o2@bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.o:
+PWD/proc/self/cwdBJPhr@local_config_platform//:hostB$libhello-time.a-2.params
+$"B%libhello-time.a
+%Ï@3e2a31d93700f7ed54164154d44634f8c8adfb7b0f5f040f951e751cd8c3ab72"
+CppArchive(2/usr/bin/ar2rcsD2.bazel-out/k8-fastbuild/bin/lib/libhello-time.a2@bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.o28@bazel-out/k8-fastbuild/bin/lib/libhello-time.a-2.params:
+PWD/proc/self/cwdBJhr@local_config_platform//:hostB&libhello-time.so-2.params
+&"		B'libhello-time.so
+'Â@fb16550a75638a62c8541e1823d4c1ade4209dabd64f281cf2b4cea7e3c393e2"CppLink(2/usr/bin/gcc2-shared2-o2/bazel-out/k8-fastbuild/bin/lib/libhello-time.so2-Wl,-S2-fuse-ld=gold2-Wl,-no-as-needed2-Wl,-z,relro,-z,now2
+-B/usr/bin2-pass-exit-codes2@bazel-out/k8-fastbuild/bin/lib/_objs/hello-time/hello-time.pic.o2-lstdc++2-lm29@bazel-out/k8-fastbuild/bin/lib/libhello-time.so-2.params:
+PWD/proc/self/cwdB	Jhr@local_config_platform//:host//main:hello-greetB(hello-greet.cc
+("B.)(_S_Smain_Chello-greet-cc_library-compile
+)"
+B*hello-greet.pic.d
+*–@518b36278aeaf8b5e30c3395254249a4da8fd9f6e8e6af23939ce5a9052d353c"
+CppCompile(2/usr/bin/gcc2-U_FORTIFY_SOURCE2-fstack-protector2-Wall2-Wunused-but-set-parameter2-Wno-free-nonheap-object2-fno-omit-frame-pointer2
+-std=c++0x2-MD2-MF2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.d2Q-frandom-seed=bazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.o2-fPIC2-DBAZEL_CURRENT_REPOSITORY=""2-iquote2.2-iquote2bazel-out/k8-fastbuild/bin2	-nostdinc2-fno-canonical-system-headers2-Wno-builtin-macro-redefined2-D__DATE__="redacted"2-D__TIMESTAMP__="redacted"2-D__TIME__="redacted"2-c2main/hello-greet.cc2-o2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.o:
+PWD/proc/self/cwdB
+JPhr@local_config_platform//:hostB+libhello-greet.a-2.params
++"B,libhello-greet.a
+,Ö@8fae472379ce9a60ad5d9956daf87b0163e6db4435d814e1e6435d35a5c70ab0"
+CppArchive(2/usr/bin/ar2rcsD20bazel-out/k8-fastbuild/bin/main/libhello-greet.a2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.o2:@bazel-out/k8-fastbuild/bin/main/libhello-greet.a-2.params:
+PWD/proc/self/cwdBJhr@local_config_platform//:hostB -libhello-greet.so-2.params
+-"	B.libhello-greet.so
+.É@2ba1fe51c2cf734e735d8e773b4cf637a0329306b88e5ff845445b85141e9e17"CppLink(2/usr/bin/gcc2-shared2-o21bazel-out/k8-fastbuild/bin/main/libhello-greet.so2-Wl,-S2-fuse-ld=gold2-Wl,-no-as-needed2-Wl,-z,relro,-z,now2
+-B/usr/bin2-pass-exit-codes2Cbazel-out/k8-fastbuild/bin/main/_objs/hello-greet/hello-greet.pic.o2-lstdc++2-lm2;@bazel-out/k8-fastbuild/bin/main/libhello-greet.so-2.params:
+PWD/proc/self/cwdBJhr@local_config_platform//:host//lib:hello-time2"B-/'_S_Slib_Chello-time2-cc_library-compile
+/"B0hello-time.pic.d
+0Ž@a43aeb1198ddca9028e97fd07b383af25f504dc86bd55c187c2cd5ad0ee474fd"
+CppCompile(2/usr/bin/gcc2-U_FORTIFY_SOURCE2-fstack-protector2-Wall2-Wunused-but-set-parameter2-Wno-free-nonheap-object2-fno-omit-frame-pointer2
+-std=c++0x2-MD2-MF2Abazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.d2O-frandom-seed=bazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.o2-fPIC2-DBAZEL_CURRENT_REPOSITORY=""2-iquote2.2-iquote2bazel-out/k8-fastbuild/bin2	-nostdinc2-fno-canonical-system-headers2-Wno-builtin-macro-redefined2-D__DATE__="redacted"2-D__TIMESTAMP__="redacted"2-D__TIME__="redacted"2-c2lib/hello-time.cc2-o2Abazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.o:
+PWD/proc/self/cwdBJPhr@local_config_platform//:hostB1libhello-time2.a-2.params
+1"B2libhello-time2.a
+2Ò@df3abe0a048f3b0d19c9ce14e0a22a1777ece89ac47e4f562117924bff3cc67f"
+CppArchive(2/usr/bin/ar2rcsD2/bazel-out/k8-fastbuild/bin/lib/libhello-time2.a2Abazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.o29@bazel-out/k8-fastbuild/bin/lib/libhello-time2.a-2.params:
+PWD/proc/self/cwdBJhr@local_config_platform//:hostB 3libhello-time2.so-2.params
+3"	B4libhello-time2.so
+ 4Å@4df53211ea3af6e1b54ac63cf249496d763ccb671d77f61410ad233dd0542ea7"CppLink(2/usr/bin/gcc2-shared2-o20bazel-out/k8-fastbuild/bin/lib/libhello-time2.so2-Wl,-S2-fuse-ld=gold2-Wl,-no-as-needed2-Wl,-z,relro,-z,now2
+-B/usr/bin2-pass-exit-codes2Abazel-out/k8-fastbuild/bin/lib/_objs/hello-time2/hello-time.pic.o2-lstdc++2-lm2:@bazel-out/k8-fastbuild/bin/lib/libhello-time2.so-2.params:
+PWD/proc/self/cwdBJ h r@local_config_platform//:host
